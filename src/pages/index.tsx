@@ -16,8 +16,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Yob | Ticketing Dapp</title>
-        <meta name='description' content='Yob is Ticketing Dapp' />
+        <title>Ticket | Ticketing Dapp</title>
+        <meta name='description' content='Become a walking Ticket' />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel='icon' href='/favicon.ico' />
       </Head>

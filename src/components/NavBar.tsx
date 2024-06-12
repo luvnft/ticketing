@@ -19,7 +19,7 @@ const providerOptions = {
       description: 'Connect to Coinbase Wallet (not Coinbase App)',
     },
     options: {
-      appName: 'Yob', // Your app name
+      appName: 'Ticket', // Your app name
       networkUrl: `https://alfajores-forno.celo-testnet.org`,
       chainId: 44787,
     },
@@ -207,9 +207,9 @@ const NavBar = () => {
 
   return (
     <div className=' sm:px-8 bg-[#2db369] z-20 mx-auto w-full fixed shadow-sm text-gray-50'>
-      <div className='flex items-center justify-between py-4 mx-4  sm:mx-0'>
+      <div className='flex items-center justify-between py-4 mx-4 sm:mx-0'>
         <Link href={'/'}>
-          <h1 className='text-4xl font-black'>Yob</h1>
+          <h1 className='text-4xl font-black'>Ticket</h1>
         </Link>
         {/* tablet laptop */}
         <div className=''>
