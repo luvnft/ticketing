@@ -9,7 +9,7 @@ import { useCallback, useEffect, useReducer } from 'react';
 import WalletLink from 'walletlink';
 import Web3Modal from 'web3modal';
 
-const INFURA_ID = '460f40a260564ac4a4f4b3fffb032dad';
+const INFURA_ID = '36699786c2c14a64ab9ceb15b98b3e7c';
 
 const providerOptions = {
   'custom-walletlink': {
@@ -207,13 +207,13 @@ const NavBar = () => {
 
   return (
     <div className=' sm:px-8 bg-[#2db369] z-20 mx-auto w-full fixed shadow-sm text-gray-50'>
-      <div className=' flex items-center justify-between py-4 sm:mx-0 mx-4 '>
+      <div className='flex items-center justify-between py-4 mx-4  sm:mx-0'>
         <Link href={'/'}>
-          <h1 className='font-black text-4xl'>Yob</h1>
+          <h1 className='text-4xl font-black'>Yob</h1>
         </Link>
         {/* tablet laptop */}
         <div className=''>
-          <ul className='sm:flex justify-center gap-4 lg:mx-gap-10 text-gray-50 hidden font-medium'>
+          <ul className='justify-center hidden gap-4 font-medium sm:flex lg:mx-gap-10 text-gray-50'>
             <Link href={'/'}>
               <li className='cursor-pointer'>Home</li>
             </Link>
@@ -233,7 +233,7 @@ const NavBar = () => {
           <ul className='fixed top-0 left-0 bottom-0 gap-3 flex flex-col shadow-xl overflow-hidden  w-5/6 max-w-sm py-6 px-6 bg-[#000] overflow-y-auto'>
             <Link href={'/'}>
               <li
-                className='cursor-pointer text-lg font-medium'
+                className='text-lg font-medium cursor-pointer'
                 onClick={() => handleOpened()}
               >
                 Home
@@ -241,7 +241,7 @@ const NavBar = () => {
             </Link>
             <Link href={'/about'}>
               <li
-                className='cursor-pointer text-lg font-medium'
+                className='text-lg font-medium cursor-pointer'
                 onClick={() => handleOpened()}
               >
                 About
@@ -249,7 +249,7 @@ const NavBar = () => {
             </Link>
             <Link href={'/myEvents'}>
               <li
-                className='cursor-pointer text-lg font-medium'
+                className='text-lg font-medium cursor-pointer'
                 onClick={() => handleOpened()}
               >
                 My events
@@ -257,7 +257,7 @@ const NavBar = () => {
             </Link>
             <Link href={'/myTickets'}>
               <li
-                className='cursor-pointer text-lg font-medium'
+                className='text-lg font-medium cursor-pointer'
                 onClick={() => handleOpened()}
               >
                 Mytickets
@@ -297,11 +297,11 @@ const NavBar = () => {
           )}
 
           {opened ? (
-            <div className='sm:hidden block'>
+            <div className='block sm:hidden'>
               <MdClose className='text-3xl' onClick={() => handleOpened()} />
             </div>
           ) : (
-            <div className='sm:hidden block'>
+            <div className='block sm:hidden'>
               <HiMenuAlt3 className='text-3xl' onClick={() => handleOpened()} />
             </div>
           )}

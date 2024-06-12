@@ -14,7 +14,7 @@ export function getChainData(chainId?: number): IChainData {
     throw new Error('ChainId missing or not supported')
   }
 
-  const API_KEY = '460f40a260564ac4a4f4b3fffb032dad'
+  const API_KEY = '36699786c2c14a64ab9ceb15b98b3e7c'
 
   if (
     chainData.rpc_url.includes('infura.io') &&
